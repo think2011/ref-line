@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>RefLine Demo</title>
+
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box" style="top:0; left:0;background: seagreen;"></div>
+<div class="box" style="top:70px; left:0;background: chartreuse;"></div>
+<!--<div class="box" style="top:140px; left:0;background: saddlebrown;"></div>
+<div class="box" style="width:80px;top:210px; left:0;background: salmon;"></div>
+<div class="box" style="width:100px;top:280px; left:0;background: sandybrown;"></div>
+<div class="box" style="width:120px;top:350px; left:0;background: skyblue;"></div>-->
+
+
+<script src="./vendors/z-Dragify.js"></script>
+<script src="RefLine.js"></script>
+<script>
+    let boxes   = Array.from(document.querySelectorAll('.box'))
+    let refLine = new RefLine()
+
+    boxes.forEach((item) => {
+        let drag = new Dragify(item)
+
+        drag
+            .on('move', () => {
+                refLine.check(drag.$elem, boxes, 5)
+            })
+            .on('end', () => {
+                refLine.uncheck()
+            })
+    })
+
+</script>
+</body>
+</html>
