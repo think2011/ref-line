@@ -1,11 +1,18 @@
 {
   "name": "RefLine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "RefLine.js",
   "scripts": {
-    "dev": "browser-sync start --server --files='**/*.css, **/*.html, **/*.js'"
+    "dev": "browser-sync start --server --files='**/*.css, **/*.html, **/*.js'",
+    "build": "webpack -p"
   },
   "repository": "git@github.com:think2011/RefLine.git",
   "author": "think2011 <452125301@qq.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.2.2",
+    "webpack": "^2.3.2"
+  }
 }
