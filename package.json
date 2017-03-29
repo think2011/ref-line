@@ -1,7 +1,7 @@
 {
   "name": "ref-line",
-  "version": "1.0.2",
-  "main": "RefLine.js",
+  "version": "1.0.3",
+  "main": "dist/ref-line.min.js",
   "scripts": {
     "dev": "browser-sync start --server --files='**/*.css, **/*.html, **/*.js'",
     "build": "webpack -p"
