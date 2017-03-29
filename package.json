@@ -1,7 +1,10 @@
 {
   "name": "RefLine",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "RefLine.js",
+  "scripts": {
+    "dev": "browser-sync start --server --files='**/*.css, **/*.html, **/*.js'"
+  },
   "repository": "git@github.com:think2011/RefLine.git",
   "author": "think2011 <452125301@qq.com>",
   "license": "MIT"

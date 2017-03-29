@@ -16,10 +16,10 @@
 
 <div class="box" style="top:0; left:0;background: seagreen;"></div>
 <div class="box" style="top:70px; left:0;background: chartreuse;"></div>
-<!--<div class="box" style="top:140px; left:0;background: saddlebrown;"></div>
+<div class="box" style="top:140px; left:0;background: saddlebrown;"></div>
 <div class="box" style="width:80px;top:210px; left:0;background: salmon;"></div>
 <div class="box" style="width:100px;top:280px; left:0;background: sandybrown;"></div>
-<div class="box" style="width:120px;top:350px; left:0;background: skyblue;"></div>-->
+<div class="box" style="width:120px;top:350px; height: 20px; left:0;background: skyblue;"></div>
 
 
 <script src="./vendors/z-Dragify.js"></script>
@@ -33,7 +33,7 @@
 
         drag
             .on('move', () => {
-                refLine.check(drag.$elem, boxes, 5)
+                refLine.check(drag.$elem, '.box')
             })
             .on('end', () => {
                 refLine.uncheck()
