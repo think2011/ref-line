@@ -1,6 +1,6 @@
 {
   "name": "RefLine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "RefLine.js",
   "scripts": {
     "dev": "browser-sync start --server --files='**/*.css, **/*.html, **/*.js'"

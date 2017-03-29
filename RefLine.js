@@ -44,6 +44,8 @@ class RefLine {
 
         this.uncheck()
         Array.from(checkNodes).forEach((item) => {
+            item.classList.remove('ref-line-active')
+
             if (item === dragNode) return
             let {top, height, bottom, left, width, right} = item.getBoundingClientRect()
             let dragWidthHalf                             = dragRect.width / 2
@@ -134,6 +136,7 @@ class RefLine {
                 conditions[key].forEach((condition) => {
                     if (!condition.isNearly) return
 
+                    item.classList.add('ref-line-active')
                     dragNode.style[key]           = `${condition.dragValue}px`
                     condition.lineNode.style[key] = `${condition.lineValue}px`
                     condition.lineNode.show()
