@@ -147,6 +147,7 @@ class RefLine {
 
     uncheck() {
         Object.values(lines).forEach((item) => item.hide())
+        Array.from(document.querySelectorAll('.ref-line-active')).forEach((item) => item.classList.remove('ref-line-active'))
     }
 
     _isNearly(dragValue, targetValue) {
