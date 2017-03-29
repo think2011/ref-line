@@ -1,6 +1,6 @@
 {
   "name": "ref-line",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/ref-line.min.js",
   "scripts": {
     "dev": "browser-sync start --server --files='**/*.css, **/*.html, **/*.js'",

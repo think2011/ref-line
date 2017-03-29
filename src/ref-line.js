@@ -12,7 +12,7 @@ for (let p in lines) {
     let node = lines[p] = document.createElement('div')
 
     node.classList.add('ref-line', p)
-    node.style.cssText = `display:none;opacity:0.7;position:absolute;background:#4DAEFF;z-index:199111250;${p[0] === 'x' ? 'width:100%;height:2px;left:0;' : 'width:2px;height:100%;top:0;'}`
+    node.style.cssText = `display:none;opacity:0.7;position:absolute;background:#4DAEFF;z-index:199111250;${p[0] === 'x' ? 'width:100%;height:1px;left:0;' : 'width:1px;height:100%;top:0;'}`
 
     // 挂上一些辅助方法
     node.show   = function () {
